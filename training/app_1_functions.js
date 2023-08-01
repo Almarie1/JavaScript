@@ -29,9 +29,9 @@ console.log(square(8))
 // Immediately invokable function expressions (IIFE's)
 // functon you declare and run at the same time
 // expression by putting it between parenthesis
-// (function(){
-//     console.log('IIFE Ran...')
-// })
+ (function(name){
+    console.log('Hello ' + name)
+ })('Almarie')
 
 // Property methods
 // when a function is put inside a object it is called a method
