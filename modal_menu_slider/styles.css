@@ -1,0 +1,19 @@
+/* Get font from google fonts */
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+/* Set varialbles on root scope */
+:root {
+    --modal-duration: 1s;
+    --primary-color: rgb(53, 14, 224);
+    --secondary-color: rgb(231, 140, 21);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
