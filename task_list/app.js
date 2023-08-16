@@ -40,3 +40,12 @@ function addTask(e) {
 
 }
 
+//remove task
+function removeTask(e) {
+    if(e.target.parentElement.classList.contains('delete-item')) {
+        console.log(e.target);
+        if(confirm('Are you sure you want to clear the list?')) {
+            e.target.parentElement.parentElement.remove();
+        }
+    }
+}
