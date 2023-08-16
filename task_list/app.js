@@ -11,6 +11,7 @@ loadEventListeners();
 function loadEventListeners() {
     //add task event
     form.addEventListener('submit', addTask);
+    taskList.addEventListener('click', removeTask);
 }
 
 function addTask(e) {
@@ -22,7 +23,7 @@ function addTask(e) {
     //add class - add meterialize class
     li.className = 'collection-item';
     //create a text note and append to li
-    li.appendChild(document.createTextNode(taskInput.value));\
+    li.appendChild(document.createTextNode(taskInput.value));
     //create new link element
     const link = document.createElement('a');
     //add class
@@ -38,3 +39,4 @@ function addTask(e) {
     e.preventDefault();
 
 }
+
