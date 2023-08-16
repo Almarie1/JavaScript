@@ -39,10 +39,22 @@ function addTask(e) {
     //append link to li
     li.appendChild(link);
     taskList.appendChild(li);
+    storeTaskInLocalStorage(taskInput.value);
 
     //clear Tasks
     taskInput.value = '';
     e.preventDefault();
+}
+
+
+//store tasks
+function storeTaskInLocalStorage(task) {
+    let tasks;
+    if(localStorage.getItem('tasks') === null) {
+        tasks = [];
+    } else {
+        tasks = JSON.parse(localStorage.getItem('tasks'));
+    }
 }
 
 //remove tasks
